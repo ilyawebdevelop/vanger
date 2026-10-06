@@ -1,7 +1,18 @@
 .footer {
-  padding: 40px 0px;
   font-size: 16px;
   line-height: 24px;
+
+  &T {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &B {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top: 1px solid var(--stroke);
+  }
+
   @include tablet {
     font-size: 14px;
     line-height: 20px;
@@ -9,15 +20,27 @@
 
   a {
     text-underline-offset: 5px;
+    text-decoration: underline;
+    transition: color .2s linear, text-decoration-color .2s linear;
+    text-decoration-color: transparent;
+
     @include hover {
-      text-decoration: underline;
+      text-decoration-color: var(--black);
     }
   }
 
   &__policy {
     text-decoration: underline;
+    transition: text-decoration-color .2s linear, color .2s linear;
+    text-decoration-color: var(--black)!important;
+
     @include hover {
-      text-decoration: none !important;
+      text-decoration-color: transparent !important;
     }
   }
+}
+
+.footerNavLinks {
+  display: flex;
+  column-gap: 32px;
 }

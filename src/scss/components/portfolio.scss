@@ -1,4 +1,5 @@
 .portfolio {
+  overflow: hidden;
 
   &__head {
     margin-bottom: 60px;
@@ -23,6 +24,7 @@
 
   &Slider {
     padding-right: 160px;
+    overflow: visible;
   }
 
   &Card {
