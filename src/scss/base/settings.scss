@@ -29,7 +29,9 @@ body {
     transition-delay: 0s !important;
   }
 }
-
+.bg--light {
+	background-color: var(--light);
+}
 .bg--black {
   background-color: var(--black);
 }
@@ -41,9 +43,18 @@ body {
 .gap-40 {
   gap: 40px;
 }
+.p-32 {
+	padding: 32px;
+}
 .p-40 {
   padding: 40px;
 }
 .pr-40 {
   padding-right: 40px;
+}
+.pr-60 {
+	padding-right: 60px;
+}
+.rounded-12 {
+	border-radius: 12px;
 }

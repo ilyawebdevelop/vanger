@@ -1,100 +1,118 @@
 .bann-title {
-  font-size: 64px;
-  font-weight: 500;
-  line-height: 110%;
-  letter-spacing: -0.72px;
-  @include desktop {
-    font-size: 64px;
-  }
-  @include laptop {
-    font-size: 56px;
-  }
-  @include laptop-min {
-    font-size: 48px;
-  }
-  @include tablet {
-    font-size: 32px;
-    line-height: 130%;
-  }
+	font-size: 64px;
+	font-weight: 500;
+	line-height: 110%;
+	letter-spacing: -0.72px;
+
+	@include desktop {
+		font-size: 64px;
+	}
+
+	@include laptop {
+		font-size: 56px;
+	}
+
+	@include laptop-min {
+		font-size: 48px;
+	}
+
+	@include tablet {
+		font-size: 32px;
+		line-height: 130%;
+	}
 }
 
 .m-title {
-  font-size: 56px;
-  font-weight: 500;
-  line-height: 110%;
-  margin: 0px 0px 20px 0px;
-  @include laptop {
-    font-size: 48px;
-    line-height: 52px;
-  }
-  @include tablet {
-    font-size: 32px;
-    line-height: 130%;
-    margin-bottom: 10px;
-  }
+	font-size: 56px;
+	font-weight: 500;
+	line-height: 110%;
+	margin: 0px 0px 20px 0px;
+
+	@include laptop {
+		font-size: 48px;
+		line-height: 52px;
+	}
+
+	@include tablet {
+		font-size: 32px;
+		line-height: 130%;
+		margin-bottom: 10px;
+	}
 }
 
 .s-title {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 64px;
-  margin: 0px 0px 20px 0px;
-  @include laptop {
-    font-size: 36px;
-    line-height: 46px;
-  }
-  @include tablet {
-    font-size: 30px;
-    line-height: 40px;
-    margin-bottom: 10px;
-  }
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 64px;
+	margin: 0px 0px 20px 0px;
 
-  span {
-    position: relative;
-    z-index: 1;
-    &::before {
-      position: absolute;
-      content: "";
-      left: 0;
-      right: 0;
-      bottom: 7px;
-      transform: translateX(10px);
-      height: 24px;
-      border-radius: 8px;
-      background-color: var(--yellow);
-      z-index: -1;
-      @include laptop {
-        height: 18px;
-      }
-      @include tablet {
-        height: 15px;
-        bottom: 2px;
-        transform: translateX(7px);
-      }
-    }
-  }
+	@include laptop {
+		font-size: 36px;
+		line-height: 46px;
+	}
+
+	@include tablet {
+		font-size: 30px;
+		line-height: 40px;
+		margin-bottom: 10px;
+	}
+
+	span {
+		position: relative;
+		z-index: 1;
+
+		&::before {
+			position: absolute;
+			content: "";
+			left: 0;
+			right: 0;
+			bottom: 7px;
+			transform: translateX(10px);
+			height: 24px;
+			border-radius: 8px;
+			background-color: var(--yellow);
+			z-index: -1;
+
+			@include laptop {
+				height: 18px;
+			}
+
+			@include tablet {
+				height: 15px;
+				bottom: 2px;
+				transform: translateX(7px);
+			}
+		}
+	}
 }
 
 .t-title {
-  font-size: 27px;
-  font-weight: 600;
-  line-height: 130%;
-  letter-spacing: 0.54px;
-  margin: 0;
-  @include tablet {
-    font-size: 24px;
-    letter-spacing: 0.48px;
-  }
+	font-size: 27px;
+	font-weight: 600;
+	line-height: 130%;
+	letter-spacing: 0.54px;
+	margin: 0;
+
+	@include tablet {
+		font-size: 24px;
+		letter-spacing: 0.48px;
+	}
 }
 
 .f-title {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 32px;
-  letter-spacing: 0.48px;
-  margin: 0;
-  @include tablet {
-    font-size: 18px;
-    letter-spacing: 0.36px;
-  }
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 32px;
+	letter-spacing: 0.48px;
+	margin: 0;
+
+	@include tablet {
+		font-size: 18px;
+		letter-spacing: 0.36px;
+	}
+}
+
+.contTitle {
+	font-size: 48px;
+	line-height: 133%
 }

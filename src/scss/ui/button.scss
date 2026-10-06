@@ -1,151 +1,159 @@
 .btn-reset {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
-  padding: 0;
-  color: inherit;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	color: inherit;
 }
 
 .button {
-  @include flex-center;
-  padding: 12px 30px;
-  border-radius: 12px;
-  background-color: var(--yellow);
-  width: fit-content;
-  outline: none;
-  border: none;
-  cursor: pointer;
+	@include flex-center;
+	padding: 12px 30px;
+	border-radius: 12px;
+	background-color: var(--yellow);
+	width: fit-content;
+	outline: none;
+	border: none;
+	cursor: pointer;
 
-  color: var(--black);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.64px;
-  text-align: center;
+	color: var(--black);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0.64px;
+	text-align: center;
 
-  transition:
-    color 0.2s ease,
-    background-color 0.2s ease;
+	transition:
+		color 0.2s ease,
+		background-color 0.2s ease;
 
-  @include hover {
-    background-color: var(--black);
-    color: var(--yellow);
-  }
+	@include hover {
+		background-color: var(--black);
+		color: var(--yellow);
+	}
 
-  @include pressed {
-    color: var(--light) !important;
-  }
+	@include pressed {
+		color: var(--light) !important;
+	}
 
-  @include tablet {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.56px;
-    padding: 10px 24px;
-  }
+	@include tablet {
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.56px;
+		padding: 10px 24px;
+	}
 
-  &._disabled {
-    pointer-events: none;
-    background-color: var(--stroke);
-    color: var(--gray);
-  }
+	&._disabled {
+		pointer-events: none;
+		background-color: var(--stroke);
+		color: var(--gray);
+	}
 
-  &._min {
-    padding: 10px 24px;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.56px;
-    border-radius: 8px;
-  }
+	&._min {
+		padding: 10px 24px;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.56px;
+		border-radius: 8px;
+	}
 
-  &._simple {
-    background-color: transparent;
-    text-decoration: underline;
-    text-underline-offset: 5px;
+	&._simple {
+		background-color: transparent;
+		text-decoration: underline;
+		text-underline-offset: 5px;
 
+		@include tablet {
+			text-underline-offset: 3px;
+		}
+	}
 
+	&._gray {
+		background-color: var(--stroke);
 
-    @include tablet {
-      text-underline-offset: 3px;
-    }
-  }
+		@include hover {
+			background-color: var(--gray);
+			color: var(--yellow);
+		}
 
-  &._gray {
-    background-color: var(--stroke);
+		@include pressed {
+			background-color: var(--black);
+			color: white;
+		}
+	}
 
-    @include hover {
-      background-color: var(--gray);
-      color: var(--yellow);
-    }
+	&._black {
+		background-color: var(--black);
+		color: #F5F5F5;
 
-    @include pressed {
-      background-color: var(--black);
-      color: white;
-    }
-  }
+		&:hover {
+			color: var(--yellow);
+		}
+	}
 
-  &._black {
-    background-color: var(--black);
-    color: #F5F5F5;
+	&._black-border {
+		border: 1px solid var(--gray);
+		background-color: transparent;
 
-    &:hover {
-      color: var(--yellow);
-    }
-  }
+		&:hover {
+			background-color: var(--black);
+			color: var(--white);
+		}
+	}
 
-  &.hover-black {
-    &:hover {
-      color: var(--black);
-    }
-  }
+	&.hover-black {
+		&:hover {
+			color: var(--black);
+		}
+	}
 
-  &.hover-img-transform {
+	&.hover-img-transform {
 
-    img {
-      transition: transform .2s linear !important;
-    }
+		img {
+			transition: transform .2s linear !important;
+		}
 
-    &:hover {
-      img {
-        transform: translateX(-3px);
-      }
-    }
-  }
+		&:hover {
+			img {
+				transform: translateX(-3px);
+			}
+		}
+	}
 }
 
 .portfolioCardLink {
-  font-size: 14px;
-  line-height: 143%;
-  letter-spacing: 0.04em;
+	font-size: 14px;
+	line-height: 143%;
+	letter-spacing: 0.04em;
 }
 
 .navArrow {
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border: none;
-  outline: none;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border: none;
+	outline: none;
 
-  &:disabled {
-    opacity: .4;
-  }
+	&:disabled {
+		opacity: .4;
+	}
 
-  &:not(:disabled):hover {
-    svg {
-      color: var(--black);
-    }
-  }
+	&:not(:disabled):hover {
+		svg {
+			color: var(--black);
+		}
+	}
 
-  &:hover {}
+	&:hover {}
 
-  svg {
-    width: 40px;
-    height: 40px;
-    fill: #777;
-    stroke: #777777;
-    color: #777;
-    transition: color .2s linear;
-  }
+	svg {
+		width: 40px;
+		height: 40px;
+		fill: #777;
+		stroke: #777777;
+		color: #777;
+		transition: color .2s linear;
+	}
 
-  &._prev {}
+	&._prev {}
 }

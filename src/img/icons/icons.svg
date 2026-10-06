@@ -4,6 +4,9 @@
 </symbol><symbol viewBox="0 0 40 40" fill="none" id="arrow-prev" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.0002 13.3333L3.3335 20L10.0002 26.6666" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
 <path d="M3.3335 20H36.6668" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+</symbol><symbol viewBox="0 0 24 24" fill="none" id="arrow-up-right" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 7H17V17" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M7 17L17 7" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
 </symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-arrow" xmlns="http://www.w3.org/2000/svg">
 <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-burger" xmlns="http://www.w3.org/2000/svg">
