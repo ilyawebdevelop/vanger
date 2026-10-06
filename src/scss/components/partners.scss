@@ -1,0 +1,29 @@
+.partners {
+  .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
+  &Slider {
+    background-color: #fff;
+    overflow: visible;
+     border-top: 1px solid #e3e3e3;
+     border-bottom: 1px solid #e3e3e3;
+  }
+}
+.partnersLogo {
+  padding-left: 28px;
+  padding-right: 28px;
+  width: 295px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #e3e3e3;
+  img {
+    transition: transform .2s linear;
+  }
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.tech {
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    row-gap: 100px;
+    column-gap: 60px;
+
+  }
+
+  &Item {
+    grid-column: 2 span;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    align-items: center;
+
+    img {
+      width: 80px;
+    }
+
+    span {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 158%;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: var(--dark-grey);
+    }
+  }
+}

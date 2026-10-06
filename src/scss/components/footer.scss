@@ -1,0 +1,23 @@
+.footer {
+  padding: 40px 0px;
+  font-size: 16px;
+  line-height: 24px;
+  @include tablet {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  a {
+    text-underline-offset: 5px;
+    @include hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__policy {
+    text-decoration: underline;
+    @include hover {
+      text-decoration: none !important;
+    }
+  }
+}

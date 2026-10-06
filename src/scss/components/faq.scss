@@ -1,0 +1,62 @@
+.faq {
+  background-color: var(--yellow);
+  padding: 40px 0px 80px 0px;
+  @include tablet {
+    padding-bottom: 40px;
+  }
+  &__accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__accordion-btn {
+    @include flex-between;
+    cursor: pointer;
+    padding: 10px 0px;
+    width: 100%;
+    border-bottom: 1px solid var(--black);
+    &[aria-expanded="true"] {
+      .faq__accordion-rect {
+        &::before {
+          transform: rotate(0deg)
+        }
+      }
+    }
+  }
+  &__accordion-rect {
+    @include flex-center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    @include tablet {
+      width: 32px;
+      height: 32px;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 26px;
+      height: 2px;
+      border-radius: 3px;
+      background-color: currentColor;
+      transition: transform 0.2s ease;
+      @include tablet {
+        width: 20px;
+      }
+    }
+    &::before {
+      transform: rotate(90deg);
+    }
+  }
+  &__accordion-content {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px 0px 40px 0px;
+    margin: 0;
+    @include tablet {
+      padding: 15px 0px;
+    }
+  }
+}

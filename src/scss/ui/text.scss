@@ -1,0 +1,86 @@
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray);
+  margin: 0;
+  @include tablet {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.lg-text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: 0.48px;
+  margin: 0;
+  @include tablet {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+  }
+
+  span {
+    border-radius: 8px;
+    background-color: var(--yellow);
+    padding: 0 8px;
+    white-space: nowrap;
+  }
+  strong {
+    font-weight: 700;
+  }
+}
+
+.price-text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 0;
+  @include tablet {
+    font-size: 20px;
+  }
+}
+.price-text-2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  @include tablet {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}
+
+.caption {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray);
+  @include tablet {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.large {
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.48px;
+  margin: 0;
+  @include tablet {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+  }
+}
+
+.fz-18 {
+  font-size: 18px;
+}
+.text-gray {
+  color: var(--gray);
+}
+.text-yellow {
+  color: var(--yellow);
+}

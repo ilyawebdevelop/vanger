@@ -1,0 +1,73 @@
+<header class="header">
+  <div class="container header__container">
+    <a href="#" class="header__logo">
+      <img src="@img/logo.svg" alt="logo" class="header__logo-img" />
+    </a>
+    <nav class="header__nav">
+      <ul class="list header__list">
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Кейсы</a></li>
+        <li><a href="#">Цены и сроки</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header__contacts">
+      <a href="tel:+73952951155" class="header__tel d-none d-xl-block">+7 (3952) 95-11-55</a>
+      <div class="list header__contacts-list">
+        <a href="#" class="header__contacts-btn">
+          <img src="@img/tg.svg" alt="icon" class="header__contacts-icon" />
+        </a>
+        <a href="#" class="header__contacts-btn">
+          <img src="@img/max.svg" alt="icon" class="header__contacts-icon" />
+        </a>
+      </div>
+    </div>
+    <button data-bs-toggle="modal" data-bs-target="#price-learn-modal" class="button _min d-none d-lg-flex _black">Узнать
+      стоимость</button>
+    <div class="header__burger-btn" id="burger-open">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#icon-burger"></use>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<div class="burger" id="burger">
+  <div class="burger__head">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="f-title">Главное меню</div>
+      <button class="btn-reset burger__close" id="burger-close">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="burger__body">
+    <div class="container">
+      <ul class="list burger__list">
+        <li><a href="#">Разработка сайтов</a></li>
+        <li><a href="#">Цены и сроки</a></li>
+        <li><a href="#">Портфолио</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="burger__contacts">
+        <a href="tel:+73952951155" class="burger__tel">+7 (3952) 95-11-55</a>
+        <ul class="list burger__social">
+          <li>
+            <a href="#" target="_blank" class="burger__social-btn">
+              <img src="@img/whats.svg" alt="icon" class="burger__social-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="burger__social-btn">
+              <img src="@img/tg.svg" alt="icon" class="burger__social-icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button data-bs-toggle="modal" data-bs-target="#price-learn-modal" class="button burger__bottom-btn">Узнать
+        стоимость</button>
+    </div>
+  </div>
+</div>

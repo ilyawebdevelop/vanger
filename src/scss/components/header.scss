@@ -1,0 +1,153 @@
+.header {
+  position: sticky;
+  top: 0;
+  padding: 14px 0px;
+  background-color: var(--light);
+  border-bottom: 1px solid rgba(63, 63, 63, 0.1);
+  z-index: 100;
+
+  &__container {
+    @include flex-between;
+    padding: 0 20px !important;
+    gap: 30px;
+
+    @include laptop-min {
+      justify-content: start
+    }
+
+    @include tablet-min {
+      gap: 10px;
+    }
+
+    @include mobile {
+      padding: 0 10px !important;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 215px;
+
+    @include laptop-middle {
+      width: 160px;
+    }
+
+    @include tablet-min {
+      width: 135px;
+    }
+  }
+
+  &__logo-img {
+    width: 100%;
+  }
+
+  &__nav {
+    @include laptop-min {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 40px;
+
+    a {
+      position: relative;
+      font-size: 18px;
+      line-height: 24px;
+
+      @include hover {
+        &::before {
+          right: 0;
+        }
+      }
+
+      @include laptop {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        height: 1px;
+        background-color: currentColor;
+        transition: right 0.2s ease;
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include laptop-min {
+      margin-left: auto;
+    }
+
+    @include tablet-min {
+      gap: 16px;
+    }
+  }
+
+  &__tel {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    transition: color .2s ease;
+
+    @include hover {
+     
+    }
+  }
+
+  &__contacts-list {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__contacts-btn {
+    display: block;
+    width: 24px;
+    transition: transform .2s ease;
+
+    @include hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__contacts-icon {
+    width: 100%;
+  }
+
+  &__burger-btn {
+    justify-content: center;
+    align-items: center;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: color .2s ease, background-color .2s ease;
+
+    @include laptop-min {
+      display: flex;
+    }
+
+    @include hover {
+      background-color: rgb(253, 217, 71, 0.5);
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.main-body .header {
+  background-color: var(--yellow);
+}

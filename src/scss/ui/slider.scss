@@ -1,0 +1,64 @@
+.slider-btn {
+  @include flex-center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  padding: 0;
+  color: var(--black);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+  @include hover {
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+  }
+  @include pressed {
+    background-color: var(--black);
+    border-color: var(--black);
+    color: var(--yellow);
+  }
+  @include tablet {
+    width: 48px;
+    height: 48px;
+  }
+
+  &.swiper-button-disabled {
+    color: var(--gray);
+    pointer-events: none;
+  }
+  &._prev {
+    transform: rotate(90deg);
+  }
+  &._next {
+    transform: rotate(-90deg);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+.slider-pagination {
+  @include flex-center;
+  width: auto !important;
+  gap: 8px;
+  flex-shrink: 0;
+
+  .swiper-pagination-bullet {
+    flex-shrink: 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 0 !important;
+    opacity: 1;
+    border-radius: 8px;
+    background-color: var(--stroke);
+    transition: background-color .2s ease;
+
+    &.swiper-pagination-bullet-active {
+      width: 40px;
+      background-color: var(--yellow);
+    }
+  }
+}

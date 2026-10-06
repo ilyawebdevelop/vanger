@@ -1,0 +1,26 @@
+.breadcrumbs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 32px;
+  }
+
+  li {
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    &:not(:last-child) {
+      &::after {
+        content: ">";
+        margin-left: 10px;
+      }
+    }
+  }
+  a {
+    transition: opacity 0.2s ease;
+    @include hover {
+      opacity: 0.6;
+    }
+  }
+}

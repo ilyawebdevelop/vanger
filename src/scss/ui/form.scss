@@ -1,0 +1,121 @@
+textarea.input {
+  resize: none;
+
+  @include tablet {
+    height: 80px;
+  }
+}
+
+.input {
+  padding: 14px 0;
+  width: 100%;
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--gray);
+  outline: none;
+  box-shadow: none;
+  transform: scale(1);
+  appearance: none;
+  -webkit-appearance: none;
+  color: var(--yellow);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+
+  &::placeholder {
+    color: var(--gray);
+  }
+
+  @include hover {
+    border-color: var(--stroke);
+  }
+
+  &:focus {
+    border-color: var(--yellow) !important;
+    color: var(--yellow);
+
+    &::placeholder {
+      color: var(--yellow);
+    }
+  }
+
+  @include tablet {
+    // font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+    padding: 0 14px;
+
+    &:focus {
+   
+      padding: 0 13px;   
+
+      &::placeholder {
+        color: var(--yellow);
+      }
+    }
+  }
+}
+
+.policy-input {
+  display: none;
+
+  &:checked+label {
+    &::before {
+  
+   
+      background: url("@img/check-yellow.svg") 0 0 / 100% auto no-repeat;  
+      border: none;
+      @include tablet {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.policy-label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 34px;
+  color: #fff;
+
+  @include desktop {
+    max-width: 225px;
+  }
+
+  @include tablet {
+    padding-left: 30px;
+  }
+
+  a {
+    font-weight: 700;
+    color: var(--yellow);
+
+    @include hover {
+      text-decoration: underline;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 2px solid var(--yellow);
+
+    @include tablet {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

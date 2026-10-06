@@ -1,0 +1,58 @@
+.modal {
+  .modal-dialog {
+    width: 560px !important;
+    max-width: calc(100vw - 20px) !important;
+  }
+  .modal-content {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  &__head {
+    @include flex-between;
+    background-color: var(--yellow);
+    padding: 28px 30px;
+    @include tablet {
+      padding: 20px;
+    }
+  }
+  &__close {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.2s ease;
+    @include hover {
+      opacity: 0.6;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .manager__head {
+    padding: 32px 40px;
+    background-color: white;
+    @include tablet {
+      padding: 24px;
+      background-color: var(--light);
+    }
+  }
+  &__body {
+    padding: 0px 40px 40px 40px;
+    @include tablet {
+      padding: 20px 24px 24px 24px;
+    }
+  }
+  &__form-content {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0px 0px 16px 0px;
+    @include tablet {
+      font-size: 16px;
+      text-align: center;
+      letter-spacing: 0.32px;
+      margin-bottom: 20px;
+    }
+  }
+}

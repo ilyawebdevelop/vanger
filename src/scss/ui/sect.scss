@@ -1,0 +1,20 @@
+.sect {
+  padding: 80px 0px;
+
+  @include laptop-min {
+    padding: 60px 0px;
+  }
+
+  @include mobile {
+    padding: 40px 0px;
+  }
+
+  &._sect-top-min {
+    padding-top: 40px;
+  }
+
+  &._border-bottom {
+    border-bottom: 1px solid var(--stroke);
+  }
+}
+

@@ -1,0 +1,25 @@
+// colors
+
+.text-black {
+  color: var(--black) !important;
+}
+
+// sizes
+
+.w-sm-full {
+  @include tablet-min {
+    width: 100% !important;
+  }
+}
+.w-fit {
+  width: fit-content !important;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+// margin
+.ms-auto {
+  margin-left: auto !important;
+}

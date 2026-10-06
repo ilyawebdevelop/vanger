@@ -1,0 +1,133 @@
+.steps {}
+
+.stepsGarantNum {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 110%;
+}
+
+.stepsGarantSubtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.stepsGarantText {
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 80%;
+}
+
+.steps-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Элемент списка */
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 24px;
+  /* Отступ между шагами */
+  position: relative;
+
+  &:hover {
+    .step-badge {
+      background-color: #ffd23f;
+      /* Желтый фон круга */
+      border-color: #ffd23f;
+    }
+
+    .step-number {
+      color: #1e1e1e;
+    }
+
+    .step-title {
+      color: #ffd23f;
+      /* Желтый заголовок */
+    }
+  }
+
+  &:not(:last-child) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 48px;
+      /* Начинается от низа круга */
+      left: 22px;
+      transform: translateX(-50%);
+      width: 1px;
+      height: calc(100% - 53px);
+      background-color: #444;
+    }
+  }
+}
+
+/* Контейнер для круга с цифрой */
+.step-badge {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--gray);
+  /* Серый контур по умолчанию */
+  border-radius: 50%;
+  background-color: transparent;
+  flex-shrink: 0;
+  margin-right: 16px;
+  transition: background-color .2s linear, border-color .2s linear;
+}
+
+/* Цифра внутри круга */
+.step-number {
+  color: var(--gray);
+  /* Серый цвет цифр по умолчанию */
+  font-size: 24px;
+  font-weight: 300;
+  transition: color .2s linear;
+}
+
+/* Текстовый блок */
+.step-content {
+  padding-top: 8px;
+  /* Выравнивание текста по центру круга */
+}
+
+.step-title {
+  color: #ffffff;
+  /* Белый текст по умолчанию */
+  font-size: 24px;
+  line-height: 133%;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+  transition: color .2s linear;
+}
+
+.step-desc {
+  color: var(--gray);
+  /* Серый текст описания */
+ 
+  margin: 0;
+}
+
+/* СТИЛИ ДЛЯ АКТИВНОГО ЭЛЕМЕНТА (.active) */
+.step-item.active .step-badge {
+  background-color: #ffd23f;
+  /* Желтый фон круга */
+  border-color: #ffd23f;
+}
+
+.step-item.active .step-number {
+  color: #1e1e1e;
+  /* Темная цифра на желтом фоне */
+}
+
+.step-item.active .step-title {
+  color: #ffd23f;
+  /* Желтый заголовок */
+}

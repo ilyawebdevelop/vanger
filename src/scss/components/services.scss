@@ -1,0 +1,113 @@
+.services {
+  &Card {
+    background: var(--white);
+    padding: 32px;
+    border-radius: 2px;
+    transition: background-color .2s linear;
+
+
+    &:hover {}
+
+    &Icon {
+      opacity: .5;
+      transition: opacity .2s linear;
+    }
+
+    h3 {
+      font-size: 27px;
+    }
+
+    &Descr {
+      max-width: 460px;
+      color: var(--dark-grey);
+    }
+
+    &Links {
+      margin-bottom: 35px;
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
+
+          a {
+            padding-left: 20px;
+            padding-right: 56px;
+            display: flex;
+            flex-direction: column;
+            column-gap: 20px;
+            font-size: 21px;
+            line-height: 152%;
+            letter-spacing: 0.02em;
+            color: var(--dark-grey);
+            border-left: 4px solid var(--stroke);
+            position: relative;
+            transition: border-color .2s linear;
+
+            &:hover {
+              border-color: var(--yellow);
+
+              &:after {
+                opacity: 1;
+              }
+            }
+
+            &::after {
+              content: '';
+              width: 36px;
+              height: 36px;
+              display: flex;
+              background: url('@img/move-right.svg');
+              position: absolute;
+              right: 0;
+              opacity: 0;
+              transition: opacity .2s linear;
+            }
+
+            span {
+              font-size: 16px;
+              line-height: 150%;
+              color: var(--gray);
+            }
+          }
+        }
+      }
+    }
+
+    &Logos {
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        column-gap: 24px;
+        row-gap: 16px;
+
+        li {
+          img {
+            height: 30px;
+            object-fit: contain;
+            filter: grayscale(100%);
+          }
+        }
+      }
+    }
+
+    &.bg--yellow {
+      background-color: var(--yellow);
+
+      .servicesCardLinks ul li a {
+        border-color: var(--gray)!important;
+        span {
+          color: var(--dark-grey);
+        }
+      }
+      .servicesCardIcon {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+<div
+  class="modal fade"
+  id="price-learn-modal"
+  tabindex="-1"
+  aria-labelledby="price-learn-modal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal__head">
+        <div class="f-title">Узнать стоимость</div>
+        <button data-bs-dismiss="modal" class="btn-reset modal__close">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="manager__head">
+        <div class="manager__avatar">
+          <img
+            src="@img/avatar.jpg"
+            alt="image"
+            class="manager__avatar-img"
+          />
+        </div>
+        <div>
+          <h3 class="t-title mb-0">Данил</h3>
+          <p class="text text-black">Менеджер по работе с клиентами</p>
+        </div>
+      </div>
+      <div class="modal__body">
+        <p class="modal__form-content">Оставьте контакты <br class="d-sm-none"> и я свяжусь с Вами:</p>
+        <form action="#">
+          <input type="text" id="message-form" class="d-none">
+          <div class="mb-2">
+            <input type="text" placeholder="Ваше имя" class="input">
+          </div>
+          <div class="mb-2">
+            <input type="text" placeholder="Телефон или Email" class="input">
+          </div>
+          <div class="mb-3">
+            <textarea rows="5" class="input" placeholder="Вопрос или сообщение"></textarea>
+          </div>
+          <div class="d-flex align-items-center justify-content-between gap-4 gap-md-2 flex-wrap">
+            <input type="checkbox" id="price-learn-modal-policy" checked class="policy-input">
+            <label for="price-learn-modal-policy" class="caption policy-label">Согласен на <a href="#">обработку <br> персональных данных</a></label>
+            <button type="submit" class="button w-sm-full">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

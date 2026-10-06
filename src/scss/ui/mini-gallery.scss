@@ -1,0 +1,20 @@
+.mini-gallery {
+  position: relative;
+  width: 40px;
+  z-index: 1;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--yellow);
+    right: -8px;
+    bottom: -8px;
+    z-index: -1;
+  }
+  &__icon {
+    display: block;
+    width: 100%;
+  }
+}

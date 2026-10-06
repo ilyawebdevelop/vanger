@@ -1,0 +1,52 @@
+@import "./base/normalize";
+@import "./base/vars";
+@import "./base/templates";
+@import "./base/settings";
+@import "./base/media";
+@import "./base/body-config";
+@import "./base/config-container";
+@import "./base/classes";
+
+// ui
+@import "./ui/button";
+@import "./ui/list";
+@import "./ui/title";
+@import "./ui/text";
+@import "./ui/sect";
+@import "./ui/scrollable";
+@import "./ui/select";
+@import "./ui/form";
+@import "./ui/mini-gallery";
+@import "./ui/breadcrumbs";
+@import "./ui/pagination";
+@import "./ui/tag";
+@import "./ui/slider";
+@import "./ui/btn-up";
+
+// widgets
+@import "./widgets/manager";
+@import "./widgets/burger";
+@import "./widgets/modal";
+@import "./widgets/fancybox";
+
+// components
+@import "./components/header";
+
+@import "./components/hero";
+
+@import "./components/stat";
+@import "./components/portfolio";
+
+@import "./components/contacts";
+@import "./components/faq";
+@import "./components/services";
+@import "./components/steps";
+@import "./components/prices";
+@import "./components/archive";
+@import "./components/single";
+@import "./components/rec-projects";
+@import "./components/partners";
+@import "./components/tech";
+@import "./components/blag";
+
+@import "./components/footer";

@@ -1,0 +1,35 @@
+.btn-up {
+  @include flex-center;
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  z-index: 150;
+
+  transition: transform .4s ease, background-color .2s ease;
+
+  @include hover {
+    color: var(--yellow);
+    background-color: var(--black);
+  }
+  @include pressed {
+    color: white;
+  }
+
+  &._hidden {
+    transform: translateY(70px);
+  }
+
+  @include laptop-min {
+    display: none;
+  }
+
+  svg {
+    width: 35px;
+    height: 35px;
+    transform: rotate(180deg);
+  }
+}

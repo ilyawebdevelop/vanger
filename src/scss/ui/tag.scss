@@ -1,0 +1,32 @@
+.tag {
+  padding: 8px 16px;
+  background-color: white;
+  border-radius: 8px;
+
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+
+  @include tablet {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+    padding: 2px 8px;
+  }
+}
+a.tag {
+  @include hover {
+    background-color: var(--yellow);
+  }
+  @include pressed {
+    background-color: var(--black);
+    color: white;
+  }
+}
