@@ -86,13 +86,23 @@
 .fz-18 {
 	font-size: 18px;
 }
-
+.fz-21 {
+	font-size: 21px;
+}
+.fz-36 {
+	font-size: 36px;
+}
 .text-gray {
+	color: var(--gray);
+}
+.text-light {
+	color: var(--light)!important;
+}
+.text-dark-gray {
 	color: var(--dark-grey);
 }
-
-.text-dark-gray {
-	color: var();
+.text-stroke {
+	color: var(--stroke);
 }
 
 .text-yellow {

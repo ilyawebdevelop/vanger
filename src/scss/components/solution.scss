@@ -1,0 +1,15 @@
+.solution {
+  padding-top: 60px;
+
+  &-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 110%;
+    color: var(--gray);
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+  }
+}

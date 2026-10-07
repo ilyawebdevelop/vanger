@@ -82,6 +82,21 @@ export default function sliders() {
     })
   }
 
+  const protectTechSlider = document.querySelector(".protect-tech-slider");
+
+  if (protectTechSlider) {
+    const slider = new Swiper(protectTechSlider, {
+      loop: true,
+      speed: 800,           // Скорость движения в миллисекундах (чем больше, тем медленнее)
+      slidesPerView: 'auto', // Или укажите фиксированное число слайдов, например: 5
+      spaceBetween: 20,      // Расстояние между логотипами
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false, // Не останавливать после клика
+      },
+    })
+  }
+
 }
 
 // Настройки для верхнего слайдера (едет влево)

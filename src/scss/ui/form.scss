@@ -30,6 +30,7 @@ textarea.input {
 
   &::placeholder {
     color: var(--gray);
+    font-weight: 400;
   }
 
   @include hover {
@@ -53,8 +54,8 @@ textarea.input {
     padding: 0 14px;
 
     &:focus {
-   
-      padding: 0 13px;   
+
+      padding: 0 13px;
 
       &::placeholder {
         color: var(--yellow);
@@ -63,21 +64,83 @@ textarea.input {
   }
 }
 
+.contYellowForm {
+  .input {
+    color: var(--black);
+
+    @include hover {
+      border-color: var(--black);
+    }
+
+    &:focus {
+      border-color: var(--black) !important;
+      color: var(--black);
+
+      &::placeholder {
+        color: var(--black);
+      }
+    }
+  }
+
+  .policy-label {
+    color: var(--dark-grey);
+
+    &::before {
+      border: 2px solid var(--dark-grey);
+      position: absolute;
+      content: "";
+      top: 0px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+
+      @include tablet {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    a {
+      color: var(--dark-grey);
+    }
+  }
+
+  .policy-input {
+    &:checked+label {
+      &::before {
+        background: url("@img/check.svg") 0 0 / 100% auto no-repeat;
+        border: none;
+        width: 24px;
+        height: 24px;
+        top: -2px;
+        left: -2px;
+      }
+    }
+
+
+  }
+}
+
 .policy-input {
   display: none;
 
   &:checked+label {
     &::before {
-  
-   
-      background: url("@img/check-yellow.svg") 0 0 / 100% auto no-repeat;  
+      background: url("@img/check-yellow.svg") 0 0 / 100% auto no-repeat;
       border: none;
+      width: 21px;
+      height: 21px;
+ 
+
       @include tablet {
         width: 20px;
         height: 20px;
       }
     }
   }
+
+
 }
 
 .policy-label {

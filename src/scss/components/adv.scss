@@ -1,0 +1,28 @@
+.protect-adv {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.protect-adv-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.protect-adv-item {
+  grid-column: 3 span;
+
+
+  &:not(:first-child) {
+    padding-left: 32px;
+  }
+  &:not(:last-child){
+    padding-right: 32px;
+    border-right: 1px solid var(--dark-grey);
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    color: var(--yellow);
+  }
+}

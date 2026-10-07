@@ -29,9 +29,15 @@ body {
     transition-delay: 0s !important;
   }
 }
-.bg--light {
-	background-color: var(--light);
+
+.bg--white {
+  background-color: #fff;
 }
+
+.bg--light {
+  background-color: var(--light);
+}
+
 .bg--black {
   background-color: var(--black);
 }
@@ -40,21 +46,63 @@ body {
   background-color: var(--yellow);
 }
 
+.gap-20 {
+  gap: 20px;
+}
+
 .gap-40 {
   gap: 40px;
 }
+
 .p-32 {
-	padding: 32px;
+  padding: 32px;
 }
+
 .p-40 {
   padding: 40px;
 }
+
 .pr-40 {
   padding-right: 40px;
 }
+
 .pr-60 {
-	padding-right: 60px;
+  padding-right: 60px;
 }
+
 .rounded-12 {
-	border-radius: 12px;
+  border-radius: 12px;
+}
+
+.contentPosterLink {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 87.98%);
+  }
+
+  .button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &>img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.border-l-3-dark-gray {
+  border-left: 3px solid var(--dark-grey);
 }

@@ -1,0 +1,70 @@
+<section class="solution sect bg--black">
+  <div class="container">
+    <div class="text-light mb-3 pb-1">
+      Наш подход — Инженерное решение
+    </div>
+    <h2 class="h2 s-title mb-3 pb-1 text-yellow">
+      Мы строим интеллектуальную эшелонированную оборону на уровне L7:
+    </h2>
+    <div class="fz-21 text-white">
+      Вместо шаблонного подключения базовых тарифов защиты, мы глубоко погружаемся в логику работы вашего веб-приложения
+      и настраиваем фильтрацию на уровне прикладных GET/POST-запросов.
+    </div>
+
+    <div class="mt-5 pt-3 solution-list mb-5 pb-3">
+
+      <div class="solution-item">
+        <div class="d-flex gap-20">
+          <div class="solution-title">
+            1.
+          </div>
+          <div class="d-flex flex-column gap-2">
+            <div class="solution-title">
+              Первый рубеж
+            </div>
+            <h3 class="mb-0 text-yellow">
+              Глобальная фильтрация Cloudflare:
+            </h3>
+            <div class="fz-18 text-light">
+              Переносим DNS-зону сайта под защиту распределенной сети Cloudflare. Подключаем и тонко калибруем Web
+              Application Firewall (WAF), настраиваем правила поведенческого анализа трафика и автоматическое выявление
+              сигнатур известных бот-сетей до того, как они достигнут вашего сервера.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="solution-item">
+        <div class="d-flex gap-20">
+          <div class="solution-title">
+            2.
+          </div>
+          <div class="d-flex flex-column gap-2">
+            <div class="solution-title">
+              Второй рубеж:
+            </div>
+            <h3 class="mb-0 text-yellow">
+              Локальный динамический Rate-limiting на Nginx:
+            </h3>
+            <div class="fz-18 text-light">
+              На уровне веб-сервера Nginx внедряем кастомные интеллектуальные лимиты запросов. Система в реальном
+              времени анализирует поведение посетителей, вычисляет изменяющиеся IP-адреса ботов и автоматически
+              отправляет их в бан-лист, сохраняя комфортный серфинг для реальных покупателей.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 class="s-title text-yellow mb-2">
+      Проактивный мониторинг и дежурные администраторы:
+    </h2>
+    <div class="text-light fz-18">
+      Мы не верим в полностью автоматическую защиту. Во время сложных распределенных атак боты могут имитировать
+      поведение человека. Наша собственная система мониторинга мгновенно алертит дежурную смену инженеров при первых
+      признаках аномального потребления CPU или RAM, позволяя вручную корректировать правила фильтрации.
+    </div>
+
+  </div>
+</section>
