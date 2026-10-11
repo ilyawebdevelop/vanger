@@ -6,6 +6,9 @@
     font-size: 56px;
     line-height: 110%;
     color: var(--gray);
+    @media(max-width: 991px){
+      font-size: 36px;
+    }
   }
   &-list {
     display: flex;

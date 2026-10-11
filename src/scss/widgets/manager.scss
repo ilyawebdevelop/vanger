@@ -6,15 +6,17 @@
     gap: 20px;   
     margin-bottom: 30px;
     @include tablet {
-      flex-direction: column;
-      text-align: center;
-      gap: 4px;
+
     }
   }
   &__avatar {
     position: relative;
     width: 80px;
     height: 80px;
+    @media(max-width: 575px){
+      width: 60px;
+      height: 60px;
+    }
     &::before,
     &::after {
       position: absolute;
@@ -103,8 +105,5 @@
   }
   &__body {
 
-    @include tablet {
-      padding: 20px 24px 24px 24px;
-    }
   }
 }

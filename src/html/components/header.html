@@ -1,5 +1,10 @@
 <header class="header">
   <div class="container header__container">
+    <div class="header__burger-btn" id="burger-open">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#icon-burger"></use>
+      </svg>
+    </div>
     <a href="#" class="header__logo">
       <img src="@img/logo.svg" alt="logo" class="header__logo-img" />
     </a>
@@ -12,8 +17,8 @@
       </ul>
     </nav>
     <div class="header__contacts">
-      <a href="tel:+73952951155" class="header__tel d-none d-xl-block">+7 (3952) 95-11-55</a>
-      <div class="list header__contacts-list">
+      <a href="tel:+73952951155" class="header__tel">+7 (3952) 95-11-55</a>
+      <div class="list header__contacts-list d-none d-xl-flex">
         <a href="#" class="header__contacts-btn">
           <img src="@img/tg.svg" alt="icon" class="header__contacts-icon" />
         </a>
@@ -22,13 +27,9 @@
         </a>
       </div>
     </div>
-    <button data-bs-toggle="modal" data-bs-target="#price-learn-modal" class="button _min d-none d-lg-flex _black">Узнать
+    <button data-bs-toggle="modal" data-bs-target="#price-learn-modal"
+      class="button _min d-none d-lg-flex _black">Узнать
       стоимость</button>
-    <div class="header__burger-btn" id="burger-open">
-      <svg>
-        <use xlink:href="img/icons/icons.svg#icon-burger"></use>
-      </svg>
-    </div>
   </div>
 </header>
 

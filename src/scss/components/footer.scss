@@ -1,21 +1,30 @@
 .footer {
   font-size: 16px;
   line-height: 24px;
-
+  .h5 {
+    @media(max-width: 991px){
+      font-size: 18px;
+    }
+  }
   &T {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
+    @media(max-width: 991px){
+      padding-top: 40px;
+      padding-bottom: 25px;
+    }
+    @media(max-width: 767px){
+      padding-bottom: 40px;
+    }
   }
 
   &B {
     padding-top: 60px;
     padding-bottom: 60px;
     border-top: 1px solid var(--stroke);
-  }
-
-  @include tablet {
-    font-size: 14px;
-    line-height: 20px;
+    @media(max-width: 991px){
+      padding-bottom: 30px;
+    }
   }
 
   a {
@@ -23,6 +32,7 @@
     text-decoration: underline;
     transition: color .2s linear, text-decoration-color .2s linear;
     text-decoration-color: transparent;
+    text-decoration-thickness: 1px;
 
     @include hover {
       text-decoration-color: var(--black);

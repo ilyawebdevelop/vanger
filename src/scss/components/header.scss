@@ -30,6 +30,8 @@
 
     @include laptop-middle {
       width: 160px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @include tablet-min {
@@ -85,8 +87,8 @@
     align-items: center;
     gap: 20px;
 
-    @include laptop-min {
-      margin-left: auto;
+    @include laptop-middle{
+      margin-left: unset;
     }
 
     @include tablet-min {
@@ -99,10 +101,14 @@
     font-weight: 500;
     line-height: 24px;
     transition: color .2s ease;
-
-    @include hover {
-     
+    @media(max-width: 575px){
+      font-size: 0;
+      width: 40px;
+      height: 40px;
+      background: url('@img/icons/phone-call.svg') no-repeat center center / 24px;
     }
+
+    @include hover {}
   }
 
   &__contacts-list {

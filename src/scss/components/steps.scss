@@ -1,9 +1,15 @@
-.steps {}
+.steps {
+overflow: hidden;
+}
 
 .stepsGarantNum {
   font-weight: 500;
   font-size: 80px;
   line-height: 110%;
+
+  @media(max-width: 991px) {
+    font-size: 64px;
+  }
 }
 
 .stepsGarantSubtitle {
@@ -12,12 +18,20 @@
   line-height: 130%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+
+  @media(max-width: 991px) {
+    font-size: 11px;
+  }
 }
 
 .stepsGarantText {
   font-weight: 500;
   font-size: 54px;
   line-height: 80%;
+
+  @media(max-width: 991px) {
+    font-size: 42px;
+  }
 }
 
 .steps-list {
@@ -33,6 +47,10 @@
   padding-bottom: 24px;
   /* Отступ между шагами */
   position: relative;
+
+  @media(max-width: 575px) {
+    padding-bottom: 12px;
+  }
 
   &:hover {
     .step-badge {
@@ -61,7 +79,7 @@
       transform: translateX(-50%);
       width: 1px;
       height: calc(100% - 53px);
-      background-color: #444;
+      background-color: var(--gray);
     }
   }
 }
@@ -106,12 +124,15 @@
   font-weight: 500;
   margin: 0 0 8px 0;
   transition: color .2s linear;
+
+  @media(max-width: 991px) {
+    font-size: 18px;
+  }
 }
 
 .step-desc {
   color: var(--gray);
   /* Серый текст описания */
- 
   margin: 0;
 }
 
@@ -130,4 +151,12 @@
 .step-item.active .step-title {
   color: #ffd23f;
   /* Желтый заголовок */
+}
+
+.stepsGarantShield {
+  width: 100px;
+
+  @media(max-width: 991px) {
+    width: 64px;
+  }
 }

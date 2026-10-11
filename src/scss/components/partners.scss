@@ -20,6 +20,7 @@
   align-items: center;
   justify-content: center;
   border-left: 1px solid #e3e3e3;
+  box-sizing: border-box;
 
   img {
     transition: transform .2s linear;
@@ -31,9 +32,11 @@
     }
   }
 }
+
 .protect-tech-slider {
   overflow: visible;
 }
+
 .protect-tech-slide {
   display: flex;
   flex-direction: column;
@@ -52,6 +55,7 @@
     object-position: center;
     margin-bottom: 10px;
   }
+
   span {
     font-weight: 500;
   }

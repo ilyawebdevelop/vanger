@@ -76,7 +76,7 @@
 	margin: 0;
 
 	@include tablet {
-		font-size: 20px;
+		font-size: 21px;
 		font-weight: 300;
 		line-height: 32px;
 		letter-spacing: 0.4px;
@@ -91,6 +91,21 @@
 }
 .fz-36 {
 	font-size: 36px;
+}
+.fz-lg-20 {
+	@media(max-width: 991px){
+		font-size: 20px;
+	}
+}
+.fz-lg-16 {
+	@media(max-width: 991px){
+		font-size: 16px;
+	}
+}
+.fz-lg-12 {
+	@media(max-width: 991px){
+		font-size: 12px;
+	}
 }
 .text-gray {
 	color: var(--gray);
@@ -114,5 +129,10 @@ a.hover-yellow {
 
 	&:hover {
 		color: var(--yellow);
+	}
+}
+.fw-lg-300 {
+	@media(max-width: 991px){
+		font-weight: 300;
 	}
 }

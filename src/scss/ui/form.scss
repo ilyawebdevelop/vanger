@@ -51,11 +51,11 @@ textarea.input {
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.48px;
-    padding: 0 14px;
+    padding: 13px 0;
 
     &:focus {
 
-      padding: 0 13px;
+      // padding: 0 13px;
 
       &::placeholder {
         color: var(--yellow);
@@ -95,10 +95,10 @@ textarea.input {
       height: 20px;
       border-radius: 3px;
 
-      @include tablet {
-        width: 16px;
-        height: 16px;
-      }
+      // @include tablet {
+      //   width: 16px;
+      //   height: 16px;
+      // }
     }
 
     a {
@@ -133,10 +133,10 @@ textarea.input {
       height: 21px;
  
 
-      @include tablet {
-        width: 20px;
-        height: 20px;
-      }
+      // @include tablet {
+      //   width: 20px;
+      //   height: 20px;
+      // }
     }
   }
 
@@ -151,6 +151,9 @@ textarea.input {
 
   @include desktop {
     max-width: 225px;
+  }
+  @media(max-width: 767px){
+    max-width: 175px;
   }
 
   @include tablet {
@@ -176,9 +179,12 @@ textarea.input {
     border-radius: 3px;
     border: 2px solid var(--yellow);
 
-    @include tablet {
-      width: 16px;
-      height: 16px;
-    }
+    // @include tablet {
+    //   width: 16px;
+    //   height: 16px;
+    // }
   }
+}
+.modal .policy-label {
+  color: var(--black);
 }

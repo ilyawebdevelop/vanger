@@ -7,17 +7,14 @@
     @include tablet {
       margin-bottom: 40px;
     }
-
-    @include tablet-min {
-      margin-bottom: 20px;
-    }
   }
 
   &__more {}
 
   &Slide {
     height: auto;
-    .portfolioCard{
+
+    .portfolioCard {
       height: 100%;
     }
   }
@@ -25,27 +22,39 @@
   &Slider {
     padding-right: 160px;
     overflow: visible;
+
+    @media(max-width: 1199px) {
+      padding-right: 0;
+    }
   }
 
   &Card {
     display: flex;
     background: var(--white);
+    @media(max-width: 767px){
+      flex-direction: column;
+    }
 
     &Title {
       max-width: 320px;
       transition: color .2s linear;
+
       &:hover {
         color: var(--yellow);
       }
 
       h3 {
         font-weight: 600;
+        @media(max-width: 991px){
+         font-size: 20px; 
+        }
       }
     }
 
     &Img {
       flex-shrink: 0;
       transition: opacity .2s linear;
+
       &:hover {
         opacity: .85;
       }
@@ -55,6 +64,13 @@
         width: 480px;
         object-fit: cover;
         min-height: 100%;
+        @media(max-width: 991px){
+          width: 350px;
+        }
+        @media(max-width: 767px){
+          width: 100%;
+          height: 360px;
+        }
       }
     }
 
@@ -63,12 +79,20 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @media(max-width: 1199px) {
+        padding: 20px 20px 32px;
+        justify-content: flex-start;
+      }
     }
   }
 }
 
 .portfolioCardTasks {
   margin-bottom: 24px;
+  @media(max-width: 420px){
+    margin-bottom: 32px;
+  }
 
   ul {
     list-style-type: none;
@@ -78,9 +102,16 @@
     li {
       display: flex;
       column-gap: 16px;
+      @media(max-width: 420px){
+        flex-direction: column;
+        row-gap: 12px;
+      }
 
       &:not(:last-child) {
         margin-bottom: 16px;
+        @media(max-width: 420px){
+          margin-bottom: 24px;
+        }
       }
     }
   }
@@ -100,7 +131,16 @@
     list-style-type: none;
     padding-left: 0;
     column-gap: 30px;
+    row-gap: 30px;
     margin-bottom: 0;
+
+    @media(max-width: 991px) {
+      row-gap: 20px;
+      column-gap: 20px;
+    }
+    @media(max-width: 575px){
+      flex-direction: column;
+    }
 
     li {
       display: flex;
@@ -115,6 +155,9 @@
   font-size: 32px;
   line-height: 100%;
   color: var(--black);
+  @media(max-width: 991px){
+    font-size: 28px;
+  }
 }
 
 .portfolioCardStatText {
