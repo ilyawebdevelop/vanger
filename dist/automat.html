@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Вангер</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap&_v=20261011123219" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/css/bootsrap.min.css?_v=20261011123219">
+	<link rel="stylesheet" href="./files/css/aos.min.css?_v=20261011123219">
+	<link rel="stylesheet" href="./files/css/swiper.min.css?_v=20261011123219">
+	<link rel="stylesheet" href="css/style.min.css?_v=20261011123219" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="container header__container">
+			<div class="header__burger-btn" id="burger-open">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-burger"></use>
+				</svg>
+			</div>
+			<a href="#" class="header__logo">
+				<img src="img/logo.svg" alt="logo" class="header__logo-img" />
+			</a>
+			<nav class="header__nav">
+				<ul class="list header__list">
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Кейсы</a></li>
+					<li><a href="#">Цены и сроки</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="header__contacts">
+				<a href="tel:+73952951155" class="header__tel">+7 (3952) 95-11-55</a>
+				<div class="list header__contacts-list d-none d-xl-flex">
+					<a href="#" class="header__contacts-btn">
+						<img src="img/tg.svg" alt="icon" class="header__contacts-icon" />
+					</a>
+					<a href="#" class="header__contacts-btn">
+						<img src="img/max.svg" alt="icon" class="header__contacts-icon" />
+					</a>
+				</div>
+			</div>
+			<button data-bs-toggle="modal" data-bs-target="#price-learn-modal" class="button _min d-none d-lg-flex _black">Узнать
+				стоимость</button>
+		</div>
+	</header>
+
+	<div class="burger" id="burger">
+		<div class="burger__head">
+			<div class="container d-flex align-items-center justify-content-between">
+				<div class="f-title">Главное меню</div>
+				<button class="btn-reset burger__close" id="burger-close">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="burger__body">
+			<div class="container">
+				<ul class="list burger__list">
+					<li><a href="#">Разработка сайтов</a></li>
+					<li><a href="#">Цены и сроки</a></li>
+					<li><a href="#">Портфолио</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="burger__contacts">
+					<a href="tel:+73952951155" class="burger__tel">+7 (3952) 95-11-55</a>
+					<ul class="list burger__social">
+						<li>
+							<a href="#" target="_blank" class="burger__social-btn">
+								<img src="img/whats.svg" alt="icon" class="burger__social-icon" />
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" class="burger__social-btn">
+								<img src="img/tg.svg" alt="icon" class="burger__social-icon" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				<button data-bs-toggle="modal" data-bs-target="#price-learn-modal" class="button burger__bottom-btn">Узнать
+					стоимость</button>
+			</div>
+		</div>
+	</div>
+	<main>
+		<section class="sect hero hero-serv pt-0">
+			<div class="container">
+
+				<ul class="list breadcrumbs">
+					<li><a href="/">Главная</a></li>
+					<li><a href="/">Услуги</a></li>
+					<li>WEB-разработка и автоматизация</li>
+				</ul>
+
+				<div class="row">
+					<div class="col-lg-8">
+						<h1 data-aos="fade-right" class="bann-title mt-0 mb-3 pb-1 hero__title">
+							WEB-разработка и автоматизация
+						</h1>
+						<p data-aos-delay="150" data-aos="fade-right" class="lg-text mb-3 pb-1">
+							Гарантируем 100% доступность ваших веб-ресурсов в периоды пиковых нагрузок и спланированных кибератак.
+							Развертываем интеллектуальную двухэшелонную защиту, которая блокирует бот-сети, сохраняя полную скорость
+							доступа для реальных клиентов.
+						</p>
+						<div class="d-flex gap-3 flex-wrap">
+							<button data-bs-toggle="modal" data-bs-target="#price-learn-modal" class="button w-sm-100">
+								Заказать
+								<svg style="width: 24px; height: 24px; fill: var(--black); stroke: var(--black);">
+									<use xlink:href="img/icons/icons.svg#arrow-up-right"></use>
+								</svg>
+							</button>
+							<a href="#" class="button _black-border hover-img-transform w-sm-100">
+								Смотреть примеры работ
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4 mt-3 pt-1 mt-lg-0 pt-lg-0">
+						<img class="heroImg" src="img/hero-autom.svg" alt="image" data-aos="fade-left">
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="services sect bg-white">
+			<div class="container">
+				<div class="row" style="--bs-gutter-x: 20px;">
+					<div class="col-md-6 col-lg-4 mb-3 pb-1">
+						<div class="p-32 p-lg-20 bg-light rounded-1 d-flex flex-column h-100" data-aos="flip-up">
+							<h3 class="h3 fw-semibold mb-2"><a class="hover-yellow" href="#">Кастомные CRM и B2B-порталы</a></h3>
+							<div class="fz-18 fz-lg-16 mb-4">
+								Спроектируем и внедрим централизованную партнерскую платформу с личными кабинетами агентов, автоматическим
+								расчетом вознаграждений и двусторонней синхронизацией с Bitrix24.
+							</div>
+							<a href="#" class="button _black mt-auto gap-1 h-lg-36">
+								Подробнее
+								<svg style="width: 24px; height: 24px; fill: var(--black); stroke: var(--black);">
+									<use xlink:href="img/icons/icons.svg#arrow-up-right"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb-3 pb-1">
+						<div class="p-32 p-lg-20 bg-light rounded-1 d-flex flex-column h-100" data-aos="flip-up">
+							<h3 class="h3 fw-semibold mb-2"><a class="hover-yellow" href="#">Мультирегиональные корпоративные сайты</a></h3>
+							<div class="fz-18 fz-lg-16 mb-4">
+								Создадим высоконагруженную веб-платформу со сквозной генерацией региональных поддоменов, динамическим
+								контентом под города присутствия и безопасными лид-формами.
+							</div>
+							<a href="#" class="button _black mt-auto gap-1 h-lg-36">
+								Подробнее
+								<svg style="width: 24px; height: 24px; fill: var(--black); stroke: var(--black);">
+									<use xlink:href="img/icons/icons.svg#arrow-up-right"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb-3 pb-1">
+						<div class="p-32 p-lg-20 bg-light rounded-1 d-flex flex-column h-100" data-aos="flip-up">
+							<h3 class="h3 fw-semibold mb-2"><a class="hover-yellow" href="#">Интерактивные виджеты и калькуляторы</a></h3>
+							<div class="fz-18 fz-lg-16 mb-4">
+								Тут нет текста
+							</div>
+							<a href="#" class="button _black mt-auto gap-1 h-lg-36">
+								Подробнее
+								<svg style="width: 24px; height: 24px; fill: var(--black); stroke: var(--black);">
+									<use xlink:href="img/icons/icons.svg#arrow-up-right"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sect contacts bg--yellow">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="pr-60 pr-xl-0">
+							<h2 class="h2 mb-3 pb-1 contTitle text-dark-gray" data-aos="fade-right">Защитите свой ресурс до того, как его атакуют конкуренты
+							</h2>
+							<div class="fz-21 text-dark-gray fw-lg-300" data-aos="fade-right">
+								Не ждите падения серверов. Оставьте заявку прямо сейчас — наши инженеры подключат базовую защиту, проведут
+								аудит настроек безопасности вашего веб-сервера и подготовят план отражения кибератак.
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div data-aos="fade-up" class="contFormW">
+							<h3 class="h3 mb-3 pb-1 fw-semibold">Оставить заявку на защиту от DDoS</h3>
+							<form class="contYellowForm" action="#">
+								<div class="mb-2">
+									<input type="text" placeholder="Ваше имя" class="input" />
+								</div>
+								<div class="mb-2">
+									<input type="text" placeholder="Телефон или Email" class="input" />
+								</div>
+								<div class="mb-3">
+									<textarea rows="3" class="input" placeholder="Вопрос или сообщение"></textarea>
+								</div>
+								<div class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
+									<input type="checkbox" id="contacts-policy" checked class="policy-input" />
+									<label for="contacts-policy" class="caption policy-label">Согласен на
+										<a href="#">обработку
+											персональных данных</a></label>
+									<button type="submit" class="button _black">Отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<button class="btn-reset btn-up">
+		<svg>
+			<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+		</svg>
+	</button>
+
+	<footer class="footer">
+
+		<div class="footerT">
+			<div class="container">
+				<div class="row mb-4 pb-2 pb-md-0 mb-md-3">
+					<div class="col-md-6 col-xl-4">
+						<a class="h5 mb-0" href="#">
+							Услуги
+						</a>
+					</div>
+					<div class="col-xl-4 d-none d-xl-block"></div>
+					<div class="col-md-6 col-xl-4 d-none d-md-block">
+						<div class="d-flex footerNavLinks justify-content-start justify-content-lg-end">
+							<a href="#" class="h5 mb-0">Кейсы</a>
+							<a href="#" class="h5 mb-0">Цены и сроки</a>
+							<a href="#" class="h5 mb-0">Контакты</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="mb-4 pb-2 pb-md-0">
+							<div class="fw-medium mb-3 mb-md-2">Аналитика и проектирование</div>
+							<div class="d-flex flex-column gap-3">
+								<a href="#" class="footer__policy">Аудит текущей IT-инфраструктуры</a>
+								<a href="#" class="footer__policy">Проектирование архитектуры систем</a>
+								<a href="#" class="footer__policy">UX/UI-дизайн и интерактивные прототипы</a>
+							</div>
+						</div>
+						<div class="mb-4 pb-2 pb-md-0">
+							<div class="fw-medium mb-3 mb-md-2">Сложные интеграции и разработка</div>
+							<div class="d-flex flex-column gap-3">
+								<a href="#" class="footer__policy">Интеграция 1С и сайта (OData, обмен в реальном времени)</a>
+								<a href="#" class="footer__policy">B2B-порталы и личные кабинеты для дилеров</a>
+								<a href="#" class="footer__policy">Интеграция с любыми CRM-системами (amoCRM, Битрикс24, Jivo,
+									YClients)</a>
+								<a href="#" class="footer__policy">Проектирование и программирование систем умного дома</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="mb-4 pb-2 pb-md-0">
+							<div class="fw-medium mb-3 mb-md-2">AI и облачные технологии</div>
+							<div class="d-flex flex-column gap-3">
+								<a href="#" class="footer__policy">AI-боты и ассистенты </a>
+								<a href="#" class="footer__policy">Миграция на российский хостинг </a>
+							</div>
+						</div>
+						<div class="mb-4 pb-2 pb-md-0">
+							<div class="fw-medium mb-3 mb-md-2">Рост и поддержка</div>
+							<div class="d-flex flex-column gap-3">
+								<a href="#" class="footer__policy">Доработка и поддержка текущих проектов на любом этапе </a>
+								<a href="#" class="footer__policy">SEO-продвижение и настройка рекламы (Яндекс.Директ, VK) </a>
+								<a href="#" class="footer__policy">Python-аутстаффинг </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4"></div>
+					<div class="d-flex d-md-none footerNavLinks gap-30 flex-column mt-5">
+						<a href="#" class="h5 mb-0">Кейсы</a>
+						<a href="#" class="h5 mb-0">Цены и сроки</a>
+						<a href="#" class="h5 mb-0">Контакты</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footerB">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-4 mb-4 pb-3 mb-lg-0 pb-lg-0">
+						<div class="d-flex flex-column gap-2">
+							<div>2025 © Вангер.рф, г. Иркутск</div>
+							<div>ИНН 381020983800</div>
+							<div>ОГРНИП 322385000025953</div>
+						</div>
+					</div>
+					<div class="col-lg-4 mb-4 pb-3 mb-lg-0 pb-lg-0">
+						<div class="d-flex flex-column gap-2">
+							<a href="#" class="footer__policy">Политика обработки персональных данных</a>
+							<a href="#" class="footer__policy">Пользовательское соглашение</a>
+							<a href="#" class="footer__policy">Карта сайта</a>
+						</div>
+					</div>
+					<div class="col-lg-4 mb-4 pb-3 mb-lg-0 pb-lg-0">
+						<div class="d-flex flex-column">
+							<div>г. Иркутск, ул. Пискунова, д. 160, оф. 626</div>
+							<a href="mailto:mail@vanger.org" class="footer__policy">mail@vanger.org</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<div class="modal fade" id="price-learn-modal" tabindex="-1" aria-labelledby="price-learn-modal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal__head">
+					<div class="f-title">Узнать стоимость</div>
+					<button data-bs-dismiss="modal" class="btn-reset modal__close">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="manager__head">
+					<div class="manager__avatar">
+						<img src="img/avatar.jpg" alt="image" class="manager__avatar-img" />
+					</div>
+					<div>
+						<h3 class="t-title mb-0">Данил</h3>
+						<p class="text text-black">Менеджер по работе с клиентами</p>
+					</div>
+				</div>
+				<div class="modal__body">
+					<p class="modal__form-content">Оставьте контакты <br class="d-sm-none"> и я свяжусь с Вами:</p>
+					<form action="#">
+						<input type="text" id="message-form" class="d-none">
+						<div class="mb-2">
+							<input type="text" placeholder="Ваше имя" class="input">
+						</div>
+						<div class="mb-2">
+							<input type="text" placeholder="Телефон или Email" class="input">
+						</div>
+						<div class="mb-3">
+							<textarea rows="5" class="input" placeholder="Вопрос или сообщение"></textarea>
+						</div>
+						<div class="d-flex align-items-center justify-content-between gap-4 gap-md-2 flex-wrap">
+							<input type="checkbox" id="price-learn-modal-policy" checked class="policy-input">
+							<label for="price-learn-modal-policy" class="caption policy-label">Согласен на <a href="#">обработку <br> персональных данных</a></label>
+							<button type="submit" class="button w-sm-full">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./files/js/gsap.min.js?_v=20261011123219"></script>
+	<script src="./files/js/bootsrap.min.js?_v=20261011123219"></script>
+	<script src="./files/js/aos.min.js?_v=20261011123219"></script>
+	<script src="./files/js/swiper.min.js?_v=20261011123219"></script>
+	<script src="js/app.min.js?_v=20261011123219"></script>
+</body>
+
+</html>
