@@ -101,6 +101,10 @@ body {
   display: flex;
   width: fit-content;
 
+  @media(max-width: 420px) {
+    width: 100%;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -129,7 +133,11 @@ body {
     @media(max-width: 575px) {
       max-height: 420px;
       object-fit: cover;
+    }
 
+    @media(max-width: 420px) {
+      width: 100%;
+      max-width: 100%;
     }
   }
 }

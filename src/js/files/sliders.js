@@ -67,17 +67,12 @@ export default function sliders() {
   if (partnersSlider) {
     const slider = new Swiper(partnersSlider, {
       loop: true,
-      allowTouchMove: false, // Отключаем перетаскивание мышкой, чтобы не ломать плавность
-      speed: 3000,           // Скорость движения в миллисекундах (чем больше, тем медленнее)
+      allowTouchMove: true, // Отключаем перетаскивание мышкой, чтобы не ломать плавность
+      speed: 700,           // Скорость движения в миллисекундах (чем больше, тем медленнее)
       slidesPerView: 'auto', // Или укажите фиксированное число слайдов, например: 5
       spaceBetween: 0,      // Расстояние между логотипами
       autoplay: {
-        delay: 0,            // Задержка 0 для непрерывного движения
-        disableOnInteraction: false,
-      },
-      freeMode: {
-        enabled: true,
-        momentum: false,     // Отключаем инерцию
+        delay: 3000,
       },
     })
   }
@@ -104,10 +99,9 @@ const blagSwiperTop = new Swiper('.blagSlider:not(.blagSlider--reverse)', {
   loop: true,
   spaceBetween: 4,       // Расстояние между карточками в px
   slidesPerView: 'auto',   // Автоматическая ширина слайдов по размеру картинок
-  speed: 4000,            // Скорость движения (чем больше число, тем медленнее и плавнее)
-  allowTouchMove: false,   // Отключаем перетаскивание мышкой, чтобы не ломать плавность
+  speed: 700,            // Скорость движения (чем больше число, тем медленнее и плавнее)
   autoplay: {
-    delay: 0,
+    delay: 2000,
     disableOnInteraction: false,
   },
 });
@@ -117,10 +111,9 @@ const blagSwiperBottom = new Swiper('.blagSlider--reverse', {
   loop: true,
   spaceBetween: 4,
   slidesPerView: 'auto',
-  speed: 4000,
-  allowTouchMove: false,
+  speed: 700,
   autoplay: {
-    delay: 0,
+    delay: 2000,
     disableOnInteraction: false,
     reverseDirection: true, // Включает движение в противоположную сторону
   },
