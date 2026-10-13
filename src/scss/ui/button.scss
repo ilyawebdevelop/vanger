@@ -87,7 +87,8 @@
 		color: #F5F5F5;
 
 		&:hover {
-			color: var(--yellow);
+			color: var(--white);
+			background-color: #000;
 		}
 	}
 
@@ -108,12 +109,17 @@
 	}
 
 	&.hover-img-transform {
+		transition: text-decoration-color .2s linear !important;
 
 		img {
 			transition: transform .2s linear !important;
 		}
 
 		&:hover {
+			background-color: transparent;
+			color: var(--black);
+			text-decoration-color: transparent;
+
 			img {
 				transform: translateX(-3px);
 			}

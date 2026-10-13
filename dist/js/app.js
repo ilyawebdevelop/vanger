@@ -376,9 +376,6 @@
                 speed: 800,
                 slidesPerView: 1,
                 spaceBetween: 20,
-                autoplay: {
-                    delay: 3500
-                },
                 navigation: {
                     prevEl: ".portfolio .navArrow._prev",
                     nextEl: ".portfolio .navArrow._next"

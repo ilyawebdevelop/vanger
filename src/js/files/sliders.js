@@ -47,10 +47,7 @@ export default function sliders() {
     const slider = new Swiper(portfolioSlider, {
       speed: 800,
       slidesPerView: 1,
-      spaceBetween: 20,
-      autoplay: {
-        delay: 3500
-      },
+      spaceBetween: 20,     
       navigation: {
         prevEl: ".portfolio .navArrow._prev",
         nextEl: ".portfolio .navArrow._next"
