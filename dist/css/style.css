@@ -494,6 +494,12 @@ body {
   letter-spacing: .48px;
   margin: 0
 }
+.fz-12 {
+  font-size: 12px
+}
+.fz-16 {
+  font-size: 16px
+}
 .fz-18 {
   font-size: 18px
 }
@@ -999,6 +1005,7 @@ a.tag:active {
   height: 24px
 }
 .burger {
+  width: 320px;
   position: fixed;
   z-index: 100;
   display: flex;
@@ -1028,7 +1035,7 @@ a.tag:active {
 }
 .burger__head {
   padding: 10px 0;
-  background-color: var(--light);
+  background-color: var(--black);
   border-bottom: 1px solid var(--stroke)
 }
 .burger__close {
@@ -1042,11 +1049,12 @@ a.tag:active {
 }
 .burger__close svg {
   width: 24px;
-  height: 24px
+  height: 24px;
+  color: var(--yellow)
 }
 .burger__body {
   flex: 1;
-  padding: 30px 0 20px 0
+  padding: 20px 0 0 0
 }
 .burger__body .container {
   display: flex;
@@ -1056,14 +1064,16 @@ a.tag:active {
 .burger__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  margin-bottom: 30px;
-  flex: 1
+  gap: 20px;
+  padding-bottom: 20px;
+  flex: 1;
+  background-color: #fff
 }
 .burger__list a {
   position: relative;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content
@@ -1083,7 +1093,7 @@ a.tag:active {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  margin-bottom: 35px
+  margin-bottom: 20px
 }
 .burger__tel {
   font-size: 18px;
@@ -1103,25 +1113,60 @@ a.tag:active {
   width: 100%
 }
 .burger__bottom-btn {
-  width: 100%;
+  width: 200px;
+  height: 48px;
   max-width: 400px;
-  padding: 15px 24px!important
+  padding: 15px 24px!important;
+  font-weight: 500;
+  font-size: 16px
+}
+.burger__list-wrapper {
+  background-color: #fff
+}
+.burger__contacts-wrapper {
+  background-color: var(--light);
+  padding-top: 20px;
+  padding-bottom: 20px
+}
+.burger__link:hover span {
+  color: var(--yellow)
+}
+.burger__link span {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color .2s linear
 }
 .modal .modal-dialog {
   width: 560px!important;
   max-width: calc(100vw - 20px)!important
 }
+.modal .policy-label a {
+  color: var(--black)
+}
+.modal .policy-label {
+  max-width: 100%
+}
+.modal .policy-label::before {
+  border-color: var(--black)
+}
+.modal .policy-input:checked+label::before {
+  background: url(../img/check.svg) 0 0/100% auto no-repeat;
+  width: 24px;
+  height: 24px;
+  left: -2px;
+  top: -2px
+}
 .modal .modal-content {
   border: none;
-  border-radius: 20px;
-  overflow: hidden
+  overflow: hidden;
+  border-radius: 0
 }
 .modal__head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--yellow);
-  padding: 28px 30px
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(63,63,63,.2)
 }
 .modal__close {
   width: 24px;
@@ -1132,15 +1177,24 @@ a.tag:active {
   width: 100%;
   height: 100%
 }
+.modal .manager__avatar {
+  width: 80px;
+  height: 80px
+}
 .modal .manager__head {
-  padding: 32px 40px;
-  background-color: #fff
+  padding: 32px 32px 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+  margin-bottom: 0
 }
 .modal__body {
   padding: 0 40px 40px 40px
 }
 .modal__form-content {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   margin: 0 0 16px 0
@@ -3896,12 +3950,8 @@ html.with-fancybox body.hide-scrollbar {
     width: 20px;
     height: 20px
   }
-  .modal__head {
-    padding: 20px
-  }
   .modal .manager__head {
-    padding: 24px;
-    background-color: var(--light)
+    padding: 24px 24px 0
   }
   .modal__body {
     padding: 20px 24px 24px 24px
@@ -4053,6 +4103,9 @@ html.with-fancybox body.hide-scrollbar {
   .manager__avatar {
     width: 60px;
     height: 60px
+  }
+  .modal .policy-label br {
+    display: none
   }
   .header__container {
     gap: 10px

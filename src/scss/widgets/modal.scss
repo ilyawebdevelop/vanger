@@ -3,23 +3,48 @@
     width: 560px !important;
     max-width: calc(100vw - 20px) !important;
   }
-  .modal-content {
-    border: none;
-    border-radius: 20px;
-    overflow: hidden;
+
+  .policy-label a {
+    color: var(--black);
   }
-  &__head {
-    @include flex-between;
-    background-color: var(--yellow);
-    padding: 28px 30px;
-    @include tablet {
-      padding: 20px;
+
+  .policy-label {
+    max-width: 100%;
+
+    br {
+      @media(max-width: 575px) {
+        display: none;
+      }
     }
   }
+.policy-label::before {
+  border-color: var(--black);
+}
+  .policy-input:checked+label::before {
+    background: url("@img/check.svg") 0 0 / 100% auto no-repeat;
+    width: 24px;
+    height: 24px;
+    left: -2px;
+    top: -2px;
+  }
+
+  .modal-content {
+    border: none;
+    overflow: hidden;
+    border-radius: 0
+  }
+
+  &__head {
+    @include flex-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba($color: #3F3F3F33, $alpha: .2);
+  }
+
   &__close {
     width: 24px;
     height: 24px;
     transition: opacity 0.2s ease;
+
     @include hover {
       opacity: 0.6;
     }
@@ -29,25 +54,41 @@
       height: 100%;
     }
   }
+
+  .manager__avatar {
+    width: 80px;
+    height: 80px;
+  }
+
   .manager__head {
-    padding: 32px 40px;
+    padding: 32px 32px 0;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+    margin-bottom: 0;
+
     @include tablet {
-      padding: 24px;
-      background-color: var(--light);
+      padding: 24px 24px 0;
+
     }
   }
+
   &__body {
     padding: 0px 40px 40px 40px;
+
     @include tablet {
       padding: 20px 24px 24px 24px;
     }
   }
+
   &__form-content {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     margin: 0px 0px 16px 0px;
+
     @include tablet {
       font-size: 16px;
       text-align: center;
