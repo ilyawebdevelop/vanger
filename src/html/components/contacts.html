@@ -76,14 +76,17 @@
           <p class="text mb-4 text-start text-gray">Оставьте контакты <br class="d-md-none"> и я свяжусь
             с Вами:</p>
           <form action="#">
-            <div class="mb-2">
-              <input type="text" placeholder="Ваше имя" class="input" />
+            <div class="mb-2 form-floating">
+              <input id="contName" type="text" placeholder="Ваше имя" class="input form-control" />
+              <label for="contName">Ваше имя</label>
             </div>
-            <div class="mb-2">
-              <input type="text" placeholder="Телефон или Email" class="input" />
+            <div class="mb-2 form-floating">
+              <input id="contPhone" type="text" placeholder="Телефон или Email" class="input form-control" />
+              <label for="contPhone">Телефон или Email</label>
             </div>
-            <div class="mb-3">
-              <textarea rows="3" class="input" placeholder="Вопрос или сообщение"></textarea>
+            <div class="mb-3 form-floating">
+              <textarea id="contText" rows="3" class="input form-control" placeholder="Вопрос или сообщение" style="height: 100px;"></textarea>
+              <label for="contText">Вопрос или сообщение</label>
             </div>
             <div class="d-flex align-items-center justify-content-between gap-2 gap-sm-4 gap-md-2">
               <input type="checkbox" id="contacts-policy" checked class="policy-input" />

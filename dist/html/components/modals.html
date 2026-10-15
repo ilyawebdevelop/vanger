@@ -28,18 +28,22 @@
 				<p class="modal__form-content text-center fw-normal">Оставьте контакты для связи с Вами:</p>
 				<form action="#">
 					<input type="text" id="message-form" class="d-none">
-					<div class="mb-2">
-						<input type="text" placeholder="Ваше имя" class="input">
+					<div class="mb-2 form-floating">
+						<input type="text" id="modalName" placeholder="Ваше имя" class="input form-control">
+						<label for="modalName">Ваше имя</label>
 					</div>
-					<div class="mb-2">
-						<input type="text" placeholder="Телефон или Email" class="input">
+					<div class="mb-2 form-floating">
+						<input type="text" placeholder="Телефон или Email" id="modalMail" class="input form-control">
+						<label for="modalMail">Телефон или Email</label>
 					</div>
-					<div class="mb-3">
-						<textarea rows="5" class="input" placeholder="Вопрос или сообщение"></textarea>
+					<div class="mb-3 form-floating">
+						<textarea rows="5" class="input form-control" id="modalMessage" placeholder="Вопрос или сообщение" style="height: 100px;"></textarea>
+						<label for="modalMessage">Вопрос или сообщение</label>
 					</div>
 					<div class="d-flex align-items-center justify-content-between gap-4 gap-md-2 flex-wrap">
 						<input type="checkbox" id="price-learn-modal-policy" checked class="policy-input">
-						<label for="price-learn-modal-policy" class="caption policy-label">Согласен на <a href="#">обработку <br> персональных данных</a></label>
+						<label for="price-learn-modal-policy" class="caption policy-label">Согласен на <a href="#">обработку <br>
+								персональных данных</a></label>
 						<button type="submit" class="button w-sm-full">Отправить</button>
 					</div>
 				</form>

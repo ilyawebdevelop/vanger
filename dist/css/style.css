@@ -640,7 +640,6 @@ textarea.input {
   transform: scale(1);
   appearance: none;
   -webkit-appearance: none;
-  color: var(--yellow);
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -663,27 +662,7 @@ textarea.input {
   color: var(--gray);
   font-weight: 400
 }
-.input:focus {
-  border-color: var(--yellow)!important;
-  color: var(--yellow)
-}
-.input:focus::-webkit-input-placeholder {
-  color: var(--yellow)
-}
-.input:focus:-ms-input-placeholder {
-  color: var(--yellow)
-}
-.input:focus::-ms-input-placeholder {
-  color: var(--yellow)
-}
-.input:focus::placeholder {
-  color: var(--yellow)
-}
 .contYellowForm .input {
-  color: var(--black)
-}
-.contYellowForm .input:focus {
-  border-color: var(--black)!important;
   color: var(--black)
 }
 .contYellowForm .input:focus::-webkit-input-placeholder {
@@ -753,6 +732,70 @@ textarea.input {
 }
 .modal .policy-label {
   color: var(--black)
+}
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext {
+  padding-left: 0
+}
+.form-floating>label {
+  padding-left: 0;
+  color: var(--gray)
+}
+.form-floating>.form-control:not(:-ms-input-placeholder)~label {
+  transform: scale(.85) translateY(-.5rem) translateX(0)
+}
+.form-floating>.form-control-plaintext~label,
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+  -webkit-transform: scale(.85) translateY(-.5rem) translateX(0);
+  transform: scale(.85) translateY(-.5rem) translateX(0)
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--black)
+}
+.contacts.bg--black .form-control {
+  color: var(--yellow)
+}
+.contacts.bg--black .form-control:focus {
+  background-color: rgba(0,0,0,0)
+}
+.contacts.bg--black .form-floating>label {
+  color: var(--gray)
+}
+.contacts.bg--black .form-control:focus {
+  border-color: var(--gray)
+}
+.contacts.bg--black .form-floating>.form-control:not(:-ms-input-placeholder)~label::after {
+  background-color: rgba(0,0,0,0)
+}
+.contacts.bg--black .form-floating>.form-control:not(:placeholder-shown)~label::after {
+  background-color: rgba(0,0,0,0)
+}
+.contacts.bg--black .form-floating>.form-control:focus~label::after {
+  background-color: rgba(0,0,0,0)
+}
+.contacts.bg--yellow .form-control {
+  color: var(--black)
+}
+.contacts.bg--yellow .form-control:focus {
+  background-color: rgba(0,0,0,0)
+}
+.contacts.bg--yellow .form-floating>label {
+  color: var(--gray)
+}
+.contacts.bg--yellow .form-control:focus {
+  border-color: var(--gray)
+}
+.contacts.bg--yellow .form-floating>.form-control:not(:-ms-input-placeholder)~label::after {
+  background-color: rgba(0,0,0,0)
+}
+.contacts.bg--yellow .form-floating>.form-control:not(:placeholder-shown)~label::after {
+  background-color: rgba(0,0,0,0)
+}
+.contacts.bg--yellow .form-floating>.form-control:focus~label::after {
+  background-color: rgba(0,0,0,0)
 }
 .mini-gallery {
   position: relative;
@@ -3870,18 +3913,6 @@ html.with-fancybox body.hide-scrollbar {
     letter-spacing: .48px;
     padding: 13px 0
   }
-  .input:focus::-webkit-input-placeholder {
-    color: var(--yellow)
-  }
-  .input:focus:-ms-input-placeholder {
-    color: var(--yellow)
-  }
-  .input:focus::-ms-input-placeholder {
-    color: var(--yellow)
-  }
-  .input:focus::placeholder {
-    color: var(--yellow)
-  }
   .policy-label {
     max-width: 175px
   }
@@ -4213,9 +4244,6 @@ html.with-fancybox body.hide-scrollbar {
   .select__item:hover {
     background-color: var(--stroke)
   }
-  .input:hover {
-    border-color: var(--stroke)
-  }
   .contYellowForm .input:hover {
     border-color: var(--black)
   }
@@ -4287,9 +4315,6 @@ html.with-fancybox body.hide-scrollbar {
   }
   .select__item:active {
     background-color: var(--stroke)
-  }
-  .input:active {
-    border-color: var(--stroke)
   }
   .contYellowForm .input:active {
     border-color: var(--black)

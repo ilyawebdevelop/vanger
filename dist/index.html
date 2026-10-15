@@ -8,11 +8,11 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap&_v=20261013143342" rel="stylesheet" />
-	<link rel="stylesheet" href="./files/css/bootsrap.min.css?_v=20261013143342">
-	<link rel="stylesheet" href="./files/css/aos.min.css?_v=20261013143342">
-	<link rel="stylesheet" href="./files/css/swiper.min.css?_v=20261013143342">
-	<link rel="stylesheet" href="css/style.min.css?_v=20261013143342" />
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap&_v=20261015094845" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/css/bootsrap.min.css?_v=20261015094845">
+	<link rel="stylesheet" href="./files/css/aos.min.css?_v=20261015094845">
+	<link rel="stylesheet" href="./files/css/swiper.min.css?_v=20261015094845">
+	<link rel="stylesheet" href="css/style.min.css?_v=20261015094845" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -1009,14 +1009,17 @@
 							<p class="text mb-4 text-start text-gray">Оставьте контакты <br class="d-md-none"> и я свяжусь
 								с Вами:</p>
 							<form action="#">
-								<div class="mb-2">
-									<input type="text" placeholder="Ваше имя" class="input" />
+								<div class="mb-2 form-floating">
+									<input id="contName" type="text" placeholder="Ваше имя" class="input form-control" />
+									<label for="contName">Ваше имя</label>
 								</div>
-								<div class="mb-2">
-									<input type="text" placeholder="Телефон или Email" class="input" />
+								<div class="mb-2 form-floating">
+									<input id="contPhone" type="text" placeholder="Телефон или Email" class="input form-control" />
+									<label for="contPhone">Телефон или Email</label>
 								</div>
-								<div class="mb-3">
-									<textarea rows="3" class="input" placeholder="Вопрос или сообщение"></textarea>
+								<div class="mb-3 form-floating">
+									<textarea id="contText" rows="3" class="input form-control" placeholder="Вопрос или сообщение" style="height: 100px;"></textarea>
+									<label for="contText">Вопрос или сообщение</label>
 								</div>
 								<div class="d-flex align-items-center justify-content-between gap-2 gap-sm-4 gap-md-2">
 									<input type="checkbox" id="contacts-policy" checked class="policy-input" />
@@ -1230,18 +1233,22 @@
 					<p class="modal__form-content text-center fw-normal">Оставьте контакты для связи с Вами:</p>
 					<form action="#">
 						<input type="text" id="message-form" class="d-none">
-						<div class="mb-2">
-							<input type="text" placeholder="Ваше имя" class="input">
+						<div class="mb-2 form-floating">
+							<input type="text" id="modalName" placeholder="Ваше имя" class="input form-control">
+							<label for="modalName">Ваше имя</label>
 						</div>
-						<div class="mb-2">
-							<input type="text" placeholder="Телефон или Email" class="input">
+						<div class="mb-2 form-floating">
+							<input type="text" placeholder="Телефон или Email" id="modalMail" class="input form-control">
+							<label for="modalMail">Телефон или Email</label>
 						</div>
-						<div class="mb-3">
-							<textarea rows="5" class="input" placeholder="Вопрос или сообщение"></textarea>
+						<div class="mb-3 form-floating">
+							<textarea rows="5" class="input form-control" id="modalMessage" placeholder="Вопрос или сообщение" style="height: 100px;"></textarea>
+							<label for="modalMessage">Вопрос или сообщение</label>
 						</div>
 						<div class="d-flex align-items-center justify-content-between gap-4 gap-md-2 flex-wrap">
 							<input type="checkbox" id="price-learn-modal-policy" checked class="policy-input">
-							<label for="price-learn-modal-policy" class="caption policy-label">Согласен на <a href="#">обработку <br> персональных данных</a></label>
+							<label for="price-learn-modal-policy" class="caption policy-label">Согласен на <a href="#">обработку <br>
+									персональных данных</a></label>
 							<button type="submit" class="button w-sm-full">Отправить</button>
 						</div>
 					</form>
@@ -1249,12 +1256,11 @@
 			</div>
 		</div>
 	</div>
-
-	<script src="./files/js/gsap.min.js?_v=20261013143342"></script>
-	<script src="./files/js/bootsrap.min.js?_v=20261013143342"></script>
-	<script src="./files/js/aos.min.js?_v=20261013143342"></script>
-	<script src="./files/js/swiper.min.js?_v=20261013143342"></script>
-	<script src="js/app.min.js?_v=20261013143342"></script>
+	<script src="./files/js/gsap.min.js?_v=20261015094845"></script>
+	<script src="./files/js/bootsrap.min.js?_v=20261015094845"></script>
+	<script src="./files/js/aos.min.js?_v=20261015094845"></script>
+	<script src="./files/js/swiper.min.js?_v=20261015094845"></script>
+	<script src="js/app.min.js?_v=20261015094845"></script>
 </body>
 
 </html>
